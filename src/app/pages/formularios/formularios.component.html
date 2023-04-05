@@ -1,0 +1,27 @@
+<form [formGroup]="formularioRegistro">
+  <mat-form-field appearance="outline">
+
+    <mat-label>Nombre</mat-label>
+    <input 
+    [formControl]="nombreControl"
+    matInput placeholder="Nombre">
+  
+  
+    <mat-icon matSuffix>perm_identity</mat-icon>
+    <mat-hint>Nombre Completo</mat-hint>
+    <!-- SOLO ES VISIBLE CUANDO SEA INVALIDO -->
+    <mat-error>Campo Requerido</mat-error>
+  
+  
+  </mat-form-field>
+
+  <mat-form-field appearance="outline">
+    <mat-label>Comida Favorita</mat-label>
+    <mat-select>
+      <mat-option>Pizza</mat-option>
+      <mat-option>Cafe</mat-option>
+      <mat-option>Helado</mat-option>
+    </mat-select>
+  </mat-form-field>
+  
+</form>
